@@ -1,0 +1,158 @@
+@charset "utf-8";
+
+*{
+margin: 0;
+padding: 0;
+line-height: 1;
+}
+
+html{
+scroll-behavior: smooth;
+}
+
+/* 全体レイアウト */
+body{
+background-color: #a7dcec;
+}
+
+/* レイクアウトタグ */
+.container{
+width: 960px;
+padding: 20px;
+margin: 0 auto;
+background-color: #fff;
+}
+
+/* セクショニング */
+
+/* header箇所 */
+header{
+margin-bottom: 50px;
+}
+
+header h1{
+padding: 120px 0 130px;
+font-size: 40px;
+background: url(../img/ishigaki_header.jpg) no-repeat center;
+text-align: center;
+color: #222;
+margin-bottom: 20px;
+}
+
+header p{
+padding: 0 50px;
+line-height: 1.8;
+margin-bottom: 10px;
+color: #222;
+}
+
+/* nav */
+
+.local-nav{
+width: 100%;
+max-width: 500px;
+margin: 30px auto;
+font-weight: bold;
+}
+
+.local-nav ul{
+background-color: #eee;
+padding-left: 0;
+list-style: none;
+counter-reset: section;
+padding: 20px;
+border-radius: 10px;
+}
+
+.local-nav ul li{
+padding: 20px;
+}
+
+.local-nav ul li:before{
+content:'● ';
+}
+
+.local-nav ul a{
+text-decoration: none;
+color: #222;
+}
+
+/* nav end */
+
+/* pagetop */
+
+.pagetop{
+height: 50px;
+width: 50px;
+position: fixed;
+right: 30px;
+bottom: 30px;
+background: #fff;
+border: solid 2px #222;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 2;
+}
+
+.pagetop__arrow {
+height: 10px;
+width: 10px;
+border-top: 3px solid #222;
+border-right: 3px solid #222;
+transform: translateY(20%) rotate(-45deg);
+}
+
+
+/* main箇所 */
+main{
+margin-bottom: 50px;
+}
+
+main section{
+margin-bottom: 50px;
+overflow: hidden;
+}
+
+main section p img{
+float: left;
+margin-right: 15px;
+}
+
+main h2{
+border-left: 10px solid #0669d0;
+padding: 20px;
+margin-bottom: 20px;
+color: #222;
+}
+
+main h3{
+padding: 20px;
+margin-bottom: 10px;
+background-color: #e0ebff;
+color: #222;
+font-size: 24px;
+border-top: 1px dashed #8eb5fd;
+border-bottom: 1px dashed #8eb5fd;
+}
+
+main h4{
+padding: 20px;
+color: #6584d0;
+font-size: 22px;
+}
+
+main p{
+padding: 0 20px;
+line-height: 1.6;
+color: #222;
+}
+
+/* footer箇所 */
+footer{
+padding: 20px 0 60px;
+border-top: 1px dashed #8eb5fd;
+text-align: center;
+color: #222;
+}
